@@ -3,6 +3,16 @@ name: prototype
 description: Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.
 ---
 
+## Conflict warning: Claude Code built-in `/prototype`
+
+> Claude Code ships a hidden built-in `/prototype` skill. If it shadows this shorthand, call the fully-qualified form instead:
+>
+> ```
+> /mattpocock-skills:prototype
+> ```
+>
+> See [#1019](https://github.com/mattpocock/skills/issues/1019) for context.
+
 # Prototype
 
 A prototype is **throwaway code that answers a question**. The question decides the shape.
