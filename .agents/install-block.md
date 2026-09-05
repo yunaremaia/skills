@@ -41,7 +41,7 @@ Pick the skills you want, and which coding agents to install them on. **The inst
 <canonical-block name="skills-sh-one-skill">
 
 ```bash
-npx skills@latest add mattpocock/skills --skill=<name>
+npx skills@latest add mattpocock/skills --skill <name>
 ```
 
 ```bash
@@ -49,6 +49,10 @@ npx skills@latest update <name>
 ```
 
 </canonical-block>
+
+The name is a separate argument, never `--skill=<name>`. The CLI matches `-s` and `--skill` exactly and drops any other argument starting with `-` without reporting it, so the equals form is discarded and the install falls through to the whole set: on a non-interactive agent install, `--skill=grill-with-docs` takes all 37 ([vercel-labs/skills#2039](https://github.com/vercel-labs/skills/issues/2039)).
+
+The one-skill form is also only the whole story for a skill that stands alone. Several skills are one-line delegations, and installing one of those on its own gets a skill that does not work, so its docs page names what else it needs under `## Prerequisites`.
 
 `skills@latest` is the pinned spelling in all three. The pages under `docs/` used to carry their own copy of these commands; those blocks are now deleted rather than corrected, because the site renders the install commands itself.
 

@@ -27,7 +27,7 @@ Where it is confusable with siblings:
 
 ## Prerequisites
 
-None to run it. It reads `CONTEXT.md` and any ADRs in `docs/adr/` if they exist, and speaks in your domain's own nouns when they do: a candidate reads as "deepen the Order intake module," not "refactor the FooBarHandler."
+Two other skills do have to be installed. [codebase-design](https://aihero.dev/skills-codebase-design) supplies the vocabulary every candidate is phrased in, and [domain-modeling](https://aihero.dev/skills-domain-modeling) is what keeps `CONTEXT.md` and the ADRs current while you accept and reject them.
 
 It writes in two places. The report goes to `<tmpdir>/architecture-review-<timestamp>.html`, outside the repo. During the grilling loop it will add or sharpen terms in `CONTEXT.md`, creating that file if it does not exist, and offer to record a rejected candidate as an ADR so a future run does not re-suggest it.
 

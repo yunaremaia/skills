@@ -18,6 +18,10 @@ Which of the three grilling skills you want depends on what is in front of you:
 
 Leave [plan mode](https://www.aihero.dev/ai-coding-dictionary/agent-mode) off. Plan mode primes the agent to rush toward producing a plan, which is the opposite of staying in inquiry.
 
+## Prerequisites
+
+It needs [grilling](https://aihero.dev/skills-grilling) installed alongside it, because its own `SKILL.md` is one line that delegates to it. Install `grill-me` on its own and there is nothing for the agent to load, so it guesses at what grilling means and the rounds go with it. If a session opens with every question at once, that is the tell.
+
 ## It's a conversation, not an interview
 
 The skill asks the questions, but **you** own the scope. That is the part people miss, and it separates a session that turns an idea into decisions from one that produces confident nonsense.
